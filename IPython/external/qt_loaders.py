@@ -302,10 +302,6 @@ def import_pythonqt():
     """
     from PythonQt import QtCore, QtSvg, QtGui
 
-    # Alias PythonQt-specific functions for PySide compatibility.
-    QtCore.Signal = QtCore.SIGNAL
-    QtCore.Slot = QtCore.SLOT
-
     api = QT_API_PYTHONQT
     return QtCore, QtGui, QtSvg, api
 
